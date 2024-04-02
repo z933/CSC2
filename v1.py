@@ -27,3 +27,6 @@ def instructions():
         
         elif FL == 'n':
             pass
+        
+        print("pass")
+instructions()
