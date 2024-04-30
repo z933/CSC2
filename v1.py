@@ -1,5 +1,6 @@
 import time
 
+# Introduces the user to the program
 print("Hello! user\n")
 time.sleep(1)
 print("Welcome to my program.\n")
