@@ -98,7 +98,7 @@ class Parallelogram(Shape):
         return 2 * (self.side1 + self.side2)
 
 def get_user_input():
-    shape = input("Please enter one of the chosen shapes 'Rectangle', 'Circle', 'Triangle', 'Parallelogram': ")
+    shape = input("Please enter one of the chosen shapes\n 'Rectangle',\n 'Circle',\n 'Triangle',\n 'Parallelogram': ")
     
     if shape.capitalize() == "Rectangle":
         length = float(input("Enter the length: "))
