@@ -1,21 +1,21 @@
-import time
-import math
+import time # imports time module  
+import math # imports math module
 
 print("Hello! user\n")
-time.sleep(1)
+time.sleep(1) 
 print("Welcome to my program.\n")
 time.sleep(1)
-def instructions():
+def instructions(): # shows the instructions
     while True:
-        show_instructions = input("Do you want to see the instructions? (Yes / No): ")
+        show_instructions = input("Do you want to see the instructions? (Yes / No): ") # asks the user if they want to see the instructions
         
-        FL = show_instructions[0].lower()
+        FL = show_instructions[0].lower() 
         
-        if show_instructions == '' or not FL in['y', 'n']:
+        if show_instructions == '' or not FL in['y', 'n']: # functions for yes or no
             print("Please either enter a (Y)es or (N)o\n")
-            return instructions()
+            return instructions() # returns to the top if they haven't enter thats required
         
-        if FL == 'y':
+        if FL == 'y': # prints out the instructions
             print("For this program you need to enter any")
             time.sleep(1)
             print("Shape")
@@ -26,25 +26,25 @@ def instructions():
             time.sleep(1)
             print("and lastly the Perimeter")
             pass
-        elif FL == 'n':
+        elif FL == 'n': # ignores the instructions and continues the program
             pass
 
 
-class Shape:
+class Shape: 
     def __init__(self, name):
         self.name = name
 
-    def calculate_area(self, *args):
+    def calculate_area(self, *args): # functions for calculating the area of a shape
         raise NotImplementedError
 
-    def calculate_perimeter(self, *args):
+    def calculate_perimeter(self, *args): # functions for calculating the perimeter
         raise NotImplementedError
 
-    def display_info(self, area, perimeter, *dims):
+    def display_info(self, area, perimeter, *dims): # functions for displaying the answer
         print(f"The area of a {self.name} with dimensions {', '.join(str(dim) for dim in dims)} is {area:.2f} and the perimeter is {perimeter:.2f}")
         return
 
-class Rectangle(Shape):
+class Rectangle(Shape): 
     def __init__(self, length, width):
         super().__init__("Rectangle")
         self.length = length
