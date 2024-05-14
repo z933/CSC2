@@ -29,8 +29,6 @@ def instructions(): # shows the instructions
             pass
         elif FL == 'n': # ignores the instructions and continues the program
             pass
-        elif FL == 'q':
-            exit()
 
 
 class Shape: 
@@ -115,7 +113,7 @@ def get_user_input():
     }
 
     if shape_name.capitalize() not in shape_classes:
-        raise ValueError(f"Invalid shape: {shape_name}. Please enter one of the chosen shapes.")
+        raise ValueError("Invalid shape: {}. Please enter one of the chosen shapes.".format(shape_name))
 
     shape_class = shape_classes[shape_name.capitalize()]
 

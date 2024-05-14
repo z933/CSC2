@@ -29,8 +29,7 @@ def instructions(): # shows the instructions
             pass
         elif FL == 'n': # ignores the instructions and continues the program
             pass
-        elif FL == 'q':
-            exit()
+
 
 
 class Shape: 
