@@ -5,6 +5,7 @@ print("Hello! user\n")
 time.sleep(1) 
 print("Welcome to my program.\n")
 time.sleep(1)
+
 def instructions(): # shows the instructions
     while True:
         show_instructions = input("Do you want to see the instructions? (Yes / No): ") # asks the user if they want to see the instructions
@@ -29,8 +30,6 @@ def instructions(): # shows the instructions
             pass
         elif FL == 'n': # ignores the instructions and continues the program
             pass
-
-
 
 class Shape: 
     def __init__(self, name):
