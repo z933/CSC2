@@ -1,3 +1,6 @@
+#"""Program By Carl Bombales. This program calculates the perimeter and area of a chosen shapes."""
+# Creator: Carl Bombales
+# Version: 1.2
 import time  # imports time module
 import math  # imports math module
 
@@ -111,13 +114,13 @@ class Parallelogram(Shape): # calculator function for the shape parallelogram
 
 def get_user_input(): # gets the user input
     shape_name = input(
-        "Please enter one of the chosen shapes (or '(q)uit' to exit):\n 'Rectangle',\n 'Circle',\n 'Triangle',\n 'Parallelogram'\n=> ")
+        "Please enter one of the chosen shapes (or '(q)uit' to exit):\n 1.'Rectangle',\n 2.'Circle',\n 3.'Triangle',\n 4.'Parallelogram'\n=> ")
     if shape_name.lower() == 'q': # an exit function if the user dont want to use the program
         print("Goodbye!")
         exit()
 
     shape_classes = { 
-        'Rectangle': Rectangle,
+        'Rectangle': Rectangle, 
         'Circle': Circle,
         'Triangle': Triangle,
         'Parallelogram': Parallelogram
